@@ -1,11 +1,6 @@
 package main
 
 func main() {
-	cards := newDeck()
-	cards.saveToFile("my_cards")
-
-}
-
-func newCard() string {
-	return "Five of diamonds"
+	cards := newDeckFromFile("my_cards")
+	cards.print()
 }
